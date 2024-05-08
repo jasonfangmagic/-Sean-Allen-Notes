@@ -85,6 +85,7 @@ Get the raw values
         //Printed "This is my favorite"
         
 CaseIterable
+
         for platform in SocialPlatform.allCases {
             print(platform.rawValue)
         }
