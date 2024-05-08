@@ -83,7 +83,11 @@ Get the raw values
         
         getSeanOpinion(on: .twitter)
         //Printed "This is my favorite"
-
+        
+CaseIterable
+        for platform in SocialPlatform.allCases {
+            print(platform.rawValue)
+        }
 
 
 
