@@ -52,6 +52,38 @@ Use Enum to store constant to make them more readable<br>
             countLabel.text = String (count)
         }
 
+Get the raw values
+    
+        enum SocialPlatform: String {
+            case twitter = "This is my favorite"
+            case facebook = "ok"
+            case instagram = "don't use"
+            case linkedIn = "need to post more"
+        }
+        
+        func shareImage(on platform: SocialPlatform){
+            switch platform{
+            case .twitter:
+                print("twitter shared photos")
+            case .facebook:
+                print("facebook shared photos")
+            case .instagram:
+                print("instagram shared photos")
+            case .linkedIn:
+                print("linkedIn shared photos")
+            }
+        }
+        
+        //shareImage(on: .twitter)
+        
+        func getSeanOpinion(on platform: SocialPlatform){
+            let opinion = platform.rawValue
+            print(opinion)
+        }
+        
+        getSeanOpinion(on: .twitter)
+        //Printed "This is my favorite"
+
 
 
 
