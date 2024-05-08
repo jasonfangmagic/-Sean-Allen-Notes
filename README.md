@@ -90,7 +90,24 @@ CaseIterable
             print(platform.rawValue)
         }
 
-
+Associate Values
+        enum SocialMediaPlatform {
+            case tweitter(followers: Int)
+            case youtube(subscribers: Int)
+        }
+        
+        
+        func getSponsorship(for platform: SocialMediaPlatform){
+            switch platform {
+            case .tweitter(let followers) where followers > 10000:
+                print("eligible")
+            case .youtube(let subscribers) where subscribers > 25000:
+                print("eligible")
+        }
+        
+        getSponsorship(for: .tweitter(followers: 500))
+        
+        
 
 
 
