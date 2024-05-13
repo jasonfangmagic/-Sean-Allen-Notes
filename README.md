@@ -114,6 +114,12 @@ Associate Values
 A container view that arranges its child views in a grid that grows vertically, creating items only as needed.<br>
 https://developer.apple.com/documentation/swiftui/lazyvgrid
 
+# 3. ForEach is just like For Loop to iterate views in SwiftUI
+
+        ForEach(MockData.frameworks, id: \.self) { framework in
+                        FrameworkTitleView(name: framework.name, imgaeName: framework.imageName)
+                    }
+
         
 
 
