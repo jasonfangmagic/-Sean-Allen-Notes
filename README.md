@@ -111,7 +111,7 @@ Associate Values
 
 # 2. LazyVGrid and LazyHGrid. Lazy means the view gets initialized as they needed
 
-A container view that arranges its child views in a grid that grows vertically, creating items only as needed.
+A container view that arranges its child views in a grid that grows vertically, creating items only as needed.<br>
 https://developer.apple.com/documentation/swiftui/lazyvgrid
 
         
