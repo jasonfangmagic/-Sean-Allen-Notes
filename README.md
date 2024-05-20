@@ -120,6 +120,11 @@ https://developer.apple.com/documentation/swiftui/lazyvgrid
                         FrameworkTitleView(name: framework.name, imgaeName: framework.imageName)
                     }
 
+# 4. @StateObject
+https://developer.apple.com/documentation/swiftui/stateobject <br>
+A property wrapper type that instantiates an observable object.<br>
+Similar to State. This viewmodel stays in the view.
+
         
 
 
